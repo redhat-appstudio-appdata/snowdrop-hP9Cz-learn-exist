@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: health-check-example-sozc
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: health-check-example-sozc
+    app.kubernetes.io/part-of: snowdrop
+  name: health-check-example-sozc
+  namespace: cmoullia-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: health-check-example-sozc
+    weight: null
+status: {}
