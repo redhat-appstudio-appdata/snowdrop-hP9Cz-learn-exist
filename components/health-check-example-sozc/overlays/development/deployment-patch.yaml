@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: health-check-example-sozc
+  namespace: cmoullia-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d6eec25c157183b1ec88f9d1a0dce139645a78f99a8605d85505fc55df648bbf
+        name: my-java-springboot
+        resources: {}
+status: {}
