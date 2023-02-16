@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: health-check-example-sozc
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:4554c8b86cf9dbc8cc25ddd782d160290117d7024818da3c78e83c4a19572353
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d6eec25c157183b1ec88f9d1a0dce139645a78f99a8605d85505fc55df648bbf
         name: my-java-springboot
         ports:
         - containerPort: 8081
